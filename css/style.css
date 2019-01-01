@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+a, a:visited {
+  color: inherit;
+}
+html {
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+  font-family: 'Droid Sans Mono';
+  height: auto;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.column {
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+#column-left {
+  left: 0;
+}
+#column-right {
+  right: 0;
+}
+#content {
+  width: 94%;
+  max-width: 600px;
+  margin: auto;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: scroll;
+}
+#logo {
+  display: block;
+}
+#current-img {
+  border: dotted 1px black;
+  padding: 1em;
+  cursor: pointer;
+}
+#episodes li {
+  display: inline-block;
+  width: 33%;
+  padding: 0.5em;
+  vertical-align: top;
+  overflow: hidden;
+}
+#episodes li img {
+  width: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 0.5s;
+
+}
+#episodes li img:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#episodes li img:hover .fig {
+  opacity: 0;
+}
+#links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 5em;
+}
+#links li {
+  align-items: flex-start;
+  width: 12%;
+  margin: 0 1em;
+}
+#links li img {
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.full-width {
+  width: 100%;
+}
+#overlay, #video-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: scroll;
+}
+.overlay-content {
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 100%;
+  color: white;
+  margin: auto;
+  position: absolute;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.overlay-content .contents {
+  padding: 10px;
+  width: 96%;
+  max-width: 600px;
+  margin: auto;
+}
+/*----------------------------------Video Div*/
+#video-overlay iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 600px) {
+  .column {
+    display: none;
+  }
+  #episodes li {
+    width: 50%;
+  }
+}
+
+#video-file-player {
+	display: block;
+	z-index: 101;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

@@ -1,0 +1,31 @@
+<img id="close" src="img/x.png" style="position: fixed; padding: 10px; width: 70px; position: absolute; cursor: pointer; top: 10px; left: 10px; z-index: 100;">
+
+<div id="info" class="overlay-content">
+  <div class="contents">
+
+  <!-- Write info here -->
+  Spoiler Room is an artist run audiovisual media collective from Portland, Oregon that organizes free social “episodes” and dance parties. The events are shot on analog video with a lo-fi portable TV studio, edited in real-time, and presented as video documents on Portland cable access as well as archived online. Each documented episode is an hour long and generally revolves around a guest DJ or artist that is shot in a constantly changing setting.<br><br>
+
+  Contact:<br>
+  General info: info@spoilerroom.net<br>
+  Web Master: web@spoilerroom.net<br>
+  Sponsorship inquiries: sponsors@spoilerroom.net<br>
+  Spoiler Boys DJs booking: spoilerboys@spoilerroom.net<br>
+  Spoiler Boys VJ service: visuals@spoilerroom.net<br>
+  <br>
+
+  Subscribe:<br>
+  <a href="https://www.instagram.com/spoilerroompdx/" target="_blank">Instagram: for updates</a><br>
+  <a href="https://www.youtube.com/channel/UCkWCKfmISKPtFiHHOu1uglw" target="_blank">Youtube: for new episodes</a><br><br>
+
+  <img style="width: 100%; max-width: 200px;" src="img/boot.png"/>
+
+  </div>
+</div>
+
+<!-- Script to close overlay -->
+<script>
+$('#close').click(function() {
+  $('#overlay').hide();
+});
+</script>
