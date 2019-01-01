@@ -37,6 +37,7 @@ ul {
 }
 #logo {
   display: block;
+  cursor: pointer;
 }
 #current-img {
   border: dotted 1px black;
@@ -86,6 +87,9 @@ ul {
 }
 .full-width {
   width: 100%;
+}
+.centered {
+  text-align: center;
 }
 #overlay, #video-overlay {
   display: none;

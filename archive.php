@@ -1,5 +1,6 @@
 <?php
 include "data.php";
+include "inc/functions.php";
 include "inc/header.php";
 ?>
 
@@ -14,7 +15,7 @@ include "inc/header.php";
 <div id="content">
 
   <!-- logo -->
-  <img id="logo" class="full-width" src="img/srlogo-small.png"/>
+  <img id="logo" class="full-width" src="img/srlogo-small.png" onclick="window.location.href='/'"/>
 
   <p class="full-width" style="text-align: center;">
     <img class="full-width" src="img/barbedwire.png"/><br><br>
@@ -24,33 +25,9 @@ include "inc/header.php";
   <!-- episodes -->
   <ul id="episodes">
     <?php
-          $i = 0;
-          foreach ($episodes as $episode) {
-
-            // break to only list the 10 most recent episodes
-            if ($i++ > 100) break;
-            echo
-              "<li>"
-              . "<img id='ep"
-              . (string)$episode['number']
-              . "' src='https://img.youtube.com/vi/"
-              . $episode['id']
-              . "/0.jpg' alt='"
-              . $episode['id']
-              . "'>"
-              . "<br>"
-              . "<figcaption>"
-              . "Ep "
-              . $episode['number']
-              . ": "
-              . $episode['title']
-              . "</figcaption>"
-              . "</li>"
-              ;
-          }
-        ?>
+        echo buildEpisodes($episodes, true);
+	?>
   </ul>
-<p class="fu
 
   <img class="full-width" src="img/underground.png"/>
   <br><br>

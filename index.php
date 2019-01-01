@@ -15,7 +15,7 @@ include "inc/header.php";
 <div id="content">
 
   <!-- logo -->
-  <img id="logo" class="full-width" src="img/srlogo-small.png"/>
+  <img id="logo" class="full-width" src="img/srlogo-small.png" onclick="window.location.href='/'"/>
 
   <!-- most recent episide image -->
   <p class="full-width" style="text-align: center;">> Watch EP <?php echo $highestIndex; ?>: <?php echo $episodes[$highestIndex]['title']; ?> <</p>
@@ -33,9 +33,7 @@ include "inc/header.php";
         echo buildEpisodes($episodes, false);
 	?>
   </ul>
-<p class="fu
-
-ll-width" style="text-align: center;">
+  <p class="full-width, centered">
     <a href="archive.php">All Episodes</a>
   </p>
 

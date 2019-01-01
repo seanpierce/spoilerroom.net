@@ -165,7 +165,8 @@ $episodes[18] = [
 ];
 
 $episodes[17] = [
-	"youtube" => true,
+	"youtube" => false,
+	"file" => "EP17_DJ_Rafael.mp4",
 	"title" => "DJ Rafael",
 	"id" => "5MgLV1yj32Q",
 	"number" => 17
