@@ -8,8 +8,11 @@ if (empty($_GET['number'])) {
 	try {
 		$message = "Episode {$_GET['number']} retrieved";
 		$episode = $episodes[$_GET['number']];
+		if ($episode == null) {
+			throw new Exception("Episode does not exist in the data array.");
+		}
 	} catch (Exception $exception) {
-		$message = "Episode number {$_GET['number']} does not exist.";
+		$message = "Episode number {$_GET['number']} does not exist. {$exception}";
 		$episode = false;
 	}
 }
