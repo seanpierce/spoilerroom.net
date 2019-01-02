@@ -1,4 +1,4 @@
-<img id="close" src="img/x.png" style="position: fixed; padding: 10px; width: 70px; position: absolute; cursor: pointer; top: 10px; left: 10px; z-index: 100;">
+<img id="close" onclick="closeInfo()" src="img/x.png" style="position: fixed; padding: 10px; width: 70px; position: absolute; cursor: pointer; top: 10px; left: 10px; z-index: 100;">
 
 <div id="info" class="overlay-content">
   <div class="contents">
@@ -22,10 +22,3 @@
 
   </div>
 </div>
-
-<!-- Script to close overlay -->
-<script>
-$('#close').click(function() {
-  $('#overlay').hide();
-});
-</script>

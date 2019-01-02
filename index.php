@@ -43,7 +43,7 @@ include "inc/header.php";
 
   <!-- bottom links -->
   <ul id="links">
-    <li id="info-button"><img src="img/info.png"/></li>
+    <li id="info-button" onclick="openSpoilerInfo()"><img src="img/info.png"/></li>
     <li><a href="http://dreemstreet.tictail.com/product/spoiler-room-t-shirt" target="_blank"><img src="img/merch.png"/></a></li>
     <li><a href="https://www.instagram.com/spoilerroompdx/" target="_blank"><img src="img/ig.png"/></a></li>
     <li><a href="https://www.youtube.com/channel/UCkWCKfmISKPtFiHHOu1uglw" target="_blank"><img src="img/youtube.png"/></a></li>

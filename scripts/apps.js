@@ -4,10 +4,26 @@ var overlay = document.getElementById('overlay');
 videoOverlay.style.display = 'none';
 overlay.style.display = 'none';
 
-$("#info-button").click(function() {
-  $('#overlay').load('info.txt');
-  $('#overlay').show();
-});
+function openSpoilerInfo() {
+	var overlay = document.getElementById('overlay');
+	var client = new XMLHttpRequest();
+	client.open('GET', 'info.txt');
+	client.onreadystatechange = event => {
+		if (event.target.readyState = 4) {
+			var info = document.createElement('div');
+			info.innerHTML = client.responseText;
+			overlay.appendChild(info);
+			overlay.style.display = 'inherit';
+		}
+	}
+	client.send();
+}
+
+function closeInfo() {
+	var overlay = document.getElementById('overlay');
+	overlay.innerHTML = '';
+	overlay.style.display = 'none';
+}
 
 function setFilePlayerWidth(pixels) {
 	var videoFilePlayer = document.getElementById('video-file-player');
