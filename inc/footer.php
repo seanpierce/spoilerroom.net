@@ -1,3 +1,15 @@
+<img class="full-width" src="img/underground.png"/>
+<br><br>
+<img class="full-width" src="img/chain.png"/>
+
+<!-- bottom links -->
+<ul id="links">
+	<li id="info-button" onclick="openSpoilerInfo()"><img src="img/info.png"/></li>
+	<li><a href="http://dreemstreet.tictail.com/product/spoiler-room-t-shirt" target="_blank"><img src="img/merch.png"/></a></li>
+	<li><a href="https://www.instagram.com/spoilerroompdx/" target="_blank"><img src="img/ig.png"/></a></li>
+	<li><a href="https://www.youtube.com/channel/UCkWCKfmISKPtFiHHOu1uglw" target="_blank"><img src="img/youtube.png"/></a></li>
+</ul>
+
 <!-- footer text -->
 <p class="full-width" style="text-align: center;">
   &copy; Spoiler Room <?php echo date('Y')?>
