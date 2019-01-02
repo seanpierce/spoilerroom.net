@@ -9,6 +9,12 @@ $("#info-button").click(function() {
   $('#overlay').show();
 });
 
+function setFilePlayerWidth(pixels) {
+	var videoFilePlayer = document.getElementById('video-file-player');
+	if (videoFilePlayer)
+		videoFilePlayer.width = pixels;
+}
+
 function openEpisode(number) {
 	var settings = {
 		"url": "api/episode?number=" + number,
@@ -49,6 +55,12 @@ function showFile(episode) {
 	overlay.appendChild(player);
 
 	overlay.style.display = 'inherit';
+
+	if (document.body.clientWidth < 720)
+		setFilePlayerWidth(400)
+
+	if (document.body.clientWidth < 470)
+		setFilePlayerWidth(300)
 }
 
 function closeModals() {
@@ -62,4 +74,15 @@ function closeModals() {
 	if (videoFilePlayer)
 		videoFilePlayer.parentNode.removeChild(videoFilePlayer);
 }
+
+window.addEventListener('resize', () => {
+	if (document.body.clientWidth < 720)
+		setFilePlayerWidth(400)
+	
+	if (document.body.clientWidth < 470)
+		setFilePlayerWidth(300)
+
+	if (document.body.clientWidth > 720)
+		setFilePlayerWidth(640)
+})
 
