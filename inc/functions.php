@@ -28,8 +28,10 @@ function buildEpisodes($episodes, $buildAll) {
 	$i = 0;
 
 	foreach ($episodes as $episode) {
-		if ($i++ > 9 && !$buildAll) break;
-		if ($episode['number'] == $highestIndex) continue;
+		if ($buildAll == false) {
+			if ($i++ > 9) break;
+			if ($episode['number'] == $highestIndex) continue;
+		}
 
 		$html .= buildEpisode($episode);
 	}
