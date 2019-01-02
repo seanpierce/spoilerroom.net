@@ -34,7 +34,7 @@ include "inc/header.php";
 	?>
   </ul>
   <p class="full-width, centered">
-    <a href="archive.php">All Episodes</a>
+    <a href="archive">All Episodes</a>
   </p>
 
   <img class="full-width" src="img/underground.png"/>

@@ -11,7 +11,7 @@ $("#info-button").click(function() {
 
 function openEpisode(number) {
 	var settings = {
-		"url": "api/episode.php?number=" + number,
+		"url": "api/episode?number=" + number,
 		"method": "GET",
 		"headers": {
 		  "Content-Type": "application/json"
