@@ -1,6 +1,6 @@
 <?php
 
-header("Access-Control-Allow-Origin: " . "https://localhost:8888");
+header("Access-Control-Allow-Origin: " . "http://localhost:8888");
 
 $headers = "Content-Type";
 $methods = "GET";
@@ -24,5 +24,4 @@ $root = dirname(__DIR__);
 set_include_path($root);
 
 require_once 'data.php';
-
-
+require_once 'secrets.php';

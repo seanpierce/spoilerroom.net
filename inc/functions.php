@@ -22,7 +22,7 @@ function buildEpisode($episode) {
 
 function buildEpisodes($episodes, $buildAll) {
 	$maxArr = max(array_keys($episodes));
-	$highestIndex = $episodes[$maxArr]["number"];
+	$latestEpisodeNumber = $episodes[$maxArr]["number"];
 
 	$html;
 	$i = 0;
@@ -30,7 +30,7 @@ function buildEpisodes($episodes, $buildAll) {
 	foreach ($episodes as $episode) {
 		if ($buildAll == false) {
 			if ($i++ > 9) break;
-			if ($episode['number'] == $highestIndex) continue;
+			if ($episode['number'] == $latestEpisodeNumber) continue;
 		}
 
 		$html .= buildEpisode($episode);
