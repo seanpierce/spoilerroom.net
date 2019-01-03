@@ -17,7 +17,8 @@ $episodes[39] = [
 ];
 
 $episodes[38] = [
-	"youtube" => true,
+	"youtube" => false,
+	"file" => "EP38.mp4",
 	"title" => "Maxwell Kravinsky",
 	"id" => "6AZ0X4k9XAQ",
 	"number" => 38
@@ -32,7 +33,7 @@ $episodes[37] = [
 
 $episodes[36] = [
 	"youtube" => false,
-	"file" => "EP36_Spaulding.mp4",
+	"file" => "EP36.mp4",
 	"title" => "Spaulding (Spoiler Ramp 2)",
 	"id" => "nW4Mt3N1y40",
 	"number" => 36
@@ -47,7 +48,7 @@ $episodes[35] = [
 
 $episodes[34] = [
 	"youtube" => true,
-	"title" => "Spoiler Island 3: Natural Magic",
+	"title" => "Natural Magic (Spoiler Island 3)",
 	"id" => "R9yMfU9tyg0",
 	"number" => 34
 ];
@@ -67,7 +68,8 @@ $episodes[32] = [
 ];
 
 $episodes[31] = [
-	"youtube" => true,
+	"youtube" => false,
+	"file" => "EP31.mp4",
 	"title" => "András",
 	"id" => "07Pap6GULUA",
 	"number" => 31
@@ -130,8 +132,9 @@ $episodes[23] = [
 ];
 
 $episodes[22] = [
-	"youtube" => true,
-	"title" => "Mutual Spanking (Spoiler New Years Eve)",
+	"youtube" => false,
+	"file" => "EP22.mp4",
+	"title" => "Mutual Spanking (NYE)",
 	"id" => "zYg6iY3wpcY",
 	"number" => 22
 ];
@@ -145,14 +148,14 @@ $episodes[21] = [
 
 $episodes[20] = [
 	"youtube" => true,
-	"title" => "Spoiler Island II Pt.2 (DJ Jason Urick)",
+	"title" => "Jason Urick (Spoiler Island II Pt.2)",
 	"id" => "HOzb3rp6ul0",
 	"number" => 20
 ];
 
 $episodes[19] = [
 	"youtube" => true,
-	"title" => "Spoiler Island II Pt.1 (DJ Jason Urick)",
+	"title" => "Jason Urick (Spoiler Island II Pt.1)",
 	"id" => "izmp0GuDPRY",
 	"number" => 19
 ];
@@ -166,7 +169,7 @@ $episodes[18] = [
 
 $episodes[17] = [
 	"youtube" => false,
-	"file" => "EP17_DJ_Rafael.mp4",
+	"file" => "EP17.mp4",
 	"title" => "DJ Rafael",
 	"id" => "5MgLV1yj32Q",
 	"number" => 17
@@ -251,13 +254,15 @@ $episodes[6] = [
 
 $episodes[5] = [
 	"youtube" => true,
+	"file" => "EP05.mp4",
 	"title" => "Spoiler Boys",
 	"id" => "PQUjmLE2rrE",
 	"number" => 5
 ];
 
 $episodes[4] = [
-	"youtube" => true,
+	"youtube" => false,
+	"file" => "EP04.mp4",
 	"title" => "Bannana Boi",
 	"id" => "s2vzfpCK4R0",
 	"number" => 4
@@ -271,7 +276,8 @@ $episodes[3] = [
 ];
 
 $episodes[2] = [
-	"youtube" => true,
+	"youtube" => false,
+	"file" => "EP02.mp4",
 	"title" => "Tommy Romples",
 	"id" => "dosgSKNUrV8",
 	"number" => 2
