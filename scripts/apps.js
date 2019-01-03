@@ -9,13 +9,13 @@ function openSpoilerInfo() {
 	var client = new XMLHttpRequest();
 	client.open('GET', 'info.txt');
 	client.onreadystatechange = event => {
-		if (event.target.readyState = 4) {
+		if ((event.target.readyState = 4)) {
 			var info = document.createElement('div');
 			info.innerHTML = client.responseText;
 			overlay.appendChild(info);
 			overlay.style.display = 'inherit';
 		}
-	}
+	};
 	client.send();
 }
 
@@ -27,32 +27,34 @@ function closeInfo() {
 
 function setFilePlayerWidth(pixels) {
 	var videoFilePlayer = document.getElementById('video-file-player');
-	if (videoFilePlayer)
-		videoFilePlayer.width = pixels;
+	if (videoFilePlayer) videoFilePlayer.width = pixels;
 }
 
 function openEpisode(number) {
 	var settings = {
-		"url": "api/episode?number=" + number,
-		"method": "GET",
-		"headers": {
-		  "Content-Type": "application/json"
+		url: 'api/episode?number=' + number,
+		method: 'GET',
+		headers: {
+			'Content-Type': 'application/json'
 		}
-	}
-	  
+	};
+
 	$.ajax(settings).done(res => {
 		var episode = res.data;
 
 		if (episode.youtube) {
-			showYoutube(episode)
+			showYoutube(episode);
 		} else {
-			showFile(episode)
+			showFile(episode);
 		}
 	});
 }
 
 function showYoutube(episode) {
-	var url = "https://www.youtube.com/embed/" + episode.id + "?autoplay=1&showinfo=0&controls=1";
+	var url =
+		'https://www.youtube.com/embed/' +
+		episode.id +
+		'?autoplay=1&showinfo=0&controls=1';
 	var player = document.getElementById('video-frame');
 	var overlay = document.getElementById('video-overlay');
 	player.src = url;
@@ -61,8 +63,8 @@ function showYoutube(episode) {
 
 function showFile(episode) {
 	var player = document.createElement('video');
-	player.id = 'video-file-player'
-	player.classList = 'video-player, modal'
+	player.id = 'video-file-player';
+	player.classList = 'video-player, modal';
 	player.controls = true;
 	player.autoplay = true;
 	player.src = 'mov/mp4/' + episode.file;
@@ -72,11 +74,9 @@ function showFile(episode) {
 
 	overlay.style.display = 'inherit';
 
-	if (document.body.clientWidth < 720)
-		setFilePlayerWidth(400)
+	if (document.body.clientWidth < 720) setFilePlayerWidth(400);
 
-	if (document.body.clientWidth < 470)
-		setFilePlayerWidth(300)
+	if (document.body.clientWidth < 470) setFilePlayerWidth(300);
 }
 
 function closeModals() {
@@ -92,13 +92,9 @@ function closeModals() {
 }
 
 window.addEventListener('resize', () => {
-	if (document.body.clientWidth < 720)
-		setFilePlayerWidth(400)
-	
-	if (document.body.clientWidth < 470)
-		setFilePlayerWidth(300)
+	if (document.body.clientWidth < 720) setFilePlayerWidth(400);
 
-	if (document.body.clientWidth > 720)
-		setFilePlayerWidth(640)
-})
+	if (document.body.clientWidth < 470) setFilePlayerWidth(300);
 
+	if (document.body.clientWidth > 720) setFilePlayerWidth(640);
+});
