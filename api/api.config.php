@@ -20,9 +20,9 @@ function response($message, $data)
     echo $json_response;
 }
 
-$root = explode('/api', __DIR__)[0];
+$root = dirname(__DIR__);
 set_include_path($root);
 
-include 'data.php';
+require_once 'data.php';
 
 
