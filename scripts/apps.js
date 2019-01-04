@@ -98,3 +98,19 @@ window.addEventListener('resize', () => {
 
 	if (document.body.clientWidth > 720) setFilePlayerWidth(640);
 });
+
+window.addEventListener('keyup', e => {
+	var key = e.keyCode;
+	// escape keycode = 27
+	if (key === 27) closeModals();
+});
+
+function directLinkToEpisode() {
+	var url = new URL(window.location.href);
+	var episode = url.searchParams.get('ep');
+	if (episode !== null) {
+		openEpisode(episode);
+	}
+}
+
+directLinkToEpisode();
