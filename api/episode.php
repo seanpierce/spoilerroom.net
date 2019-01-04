@@ -12,7 +12,7 @@ if (empty($_GET['number'])) {
 			throw new Exception("Episode does not exist in the data array.");
 		}
 	} catch (Exception $exception) {
-		$message = "Episode number {$_GET['number']} does not exist. {$exception}";
+		$message = "{$exception}";
 		$episode = false;
 	}
 }
