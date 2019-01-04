@@ -1,9 +1,3 @@
-var videoOverlay = document.getElementById('video-overlay');
-var overlay = document.getElementById('overlay');
-
-videoOverlay.style.display = 'none';
-overlay.style.display = 'none';
-
 function openSpoilerInfo() {
 	var overlay = document.getElementById('overlay');
 	var client = new XMLHttpRequest();
