@@ -24,4 +24,3 @@ $root = dirname(__DIR__);
 set_include_path($root);
 
 require_once 'data.php';
-require_once 'secrets.php';
