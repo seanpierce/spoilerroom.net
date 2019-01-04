@@ -98,3 +98,13 @@ window.addEventListener('resize', () => {
 
 	if (document.body.clientWidth > 720) setFilePlayerWidth(640);
 });
+
+function directLinkToEpisode() {
+	var url = new URL(window.location.href);
+	var episode = url.searchParams.get('ep');
+	if (episode !== null) {
+		openEpisode(episode);
+	}
+}
+
+directLinkToEpisode();
