@@ -2,7 +2,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="language" content="english" />
-  <meta name="description" content="" />
+  <meta name="description" content='Spoiler Room is an artist run audiovisual media collective from Portland, Oregon that organizes free social "episodes" and events.' />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Spoiler Room | Mahalo</title>
 	<!-- imports -->

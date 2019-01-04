@@ -83,6 +83,14 @@ function closeModals() {
 	var videoFilePlayer = document.getElementById('video-file-player');
 	if (videoFilePlayer)
 		videoFilePlayer.parentNode.removeChild(videoFilePlayer);
+
+	resetPath();
+}
+
+function resetPath() {
+	var url = window.location.href;
+	var path = url.split('?')[0];
+	window.history.replaceState({}, document.title, path);
 }
 
 window.addEventListener('resize', () => {
