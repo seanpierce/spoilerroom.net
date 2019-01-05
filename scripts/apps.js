@@ -41,6 +41,8 @@ function openEpisode(number) {
 		} else {
 			showFile(episode);
 		}
+
+		setPath(episode.number);
 	});
 }
 
@@ -85,6 +87,12 @@ function closeModals() {
 		videoFilePlayer.parentNode.removeChild(videoFilePlayer);
 
 	resetPath();
+}
+
+function setPath(number) {
+	var url = window.location.href;
+	var path = url + '?ep=' + number;
+	window.history.replaceState({}, document.title, path);
 }
 
 function resetPath() {
