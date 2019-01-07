@@ -90,9 +90,13 @@ function closeModals() {
 }
 
 function setPath(number) {
-	var url = window.location.href;
-	var path = url + '?ep=' + number;
-	window.history.replaceState({}, document.title, path);
+	var url = new URL(window.location.href);
+	var episode = url.searchParams.get('ep');
+	if (episode === null) {
+		var url = window.location.href;
+		var path = url + '?ep=' + number;
+		window.history.replaceState({}, document.title, path);
+	}
 }
 
 function resetPath() {
