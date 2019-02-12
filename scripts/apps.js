@@ -3,7 +3,7 @@ function openSpoilerInfo() {
 	var client = new XMLHttpRequest();
 	client.open('GET', 'info.txt');
 	client.onreadystatechange = event => {
-		if ((event.target.readyState = 4)) {
+		if ((event.target.readyState === 4)) {
 			var info = document.createElement('div');
 			info.innerHTML = client.responseText;
 			overlay.appendChild(info);
