@@ -1,6 +1,6 @@
 <?php
 
-header("Access-Control-Allow-Origin: " . "http://localhost:8888");
+header("Access-Control-Allow-Origin: " . "https://spoilerroom.net");
 
 $headers = "Content-Type";
 $methods = "GET";

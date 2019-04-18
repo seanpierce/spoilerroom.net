@@ -3,7 +3,7 @@ function openSpoilerInfo() {
 	var client = new XMLHttpRequest();
 	client.open('GET', 'info.txt');
 	client.onreadystatechange = event => {
-		if ((event.target.readyState = 4)) {
+		if (event.target.readyState === 4) {
 			var info = document.createElement('div');
 			info.innerHTML = client.responseText;
 			overlay.appendChild(info);
@@ -90,9 +90,13 @@ function closeModals() {
 }
 
 function setPath(number) {
-	var url = window.location.href;
-	var path = url + '?ep=' + number;
-	window.history.replaceState({}, document.title, path);
+	var url = new URL(window.location.href);
+	var episode = url.searchParams.get('ep');
+	if (episode === null) {
+		var url = window.location.href;
+		var path = url + '?ep=' + number;
+		window.history.replaceState({}, document.title, path);
+	}
 }
 
 function resetPath() {
