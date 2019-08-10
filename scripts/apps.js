@@ -35,12 +35,14 @@ function openEpisode(number) {
 
 	$.ajax(settings).done(res => {
 		var episode = res.data;
+		
+		if (!episode)
+			return resetPath();
 
-		if (episode.youtube) {
+		if (episode.youtube)
 			showYoutube(episode);
-		} else {
+		else
 			showFile(episode);
-		}
 
 		setPath(episode.number);
 	});
