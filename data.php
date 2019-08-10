@@ -2,6 +2,139 @@
 
 $episodes = [];
 
+$episodes[58] = [	
+	"title" => "Overland",
+	"youtube" => true,
+	"id" => "O2NkIm8nbMw",
+	"number" => 58
+];
+
+$episodes[57] = [	
+	"title" => "Kosmic",
+	"youtube" => true,
+	"id" => "EXG_vgzHYwk",
+	"number" => 57
+];
+
+$episodes[56] = [	
+	"title" => "No Control",
+	"youtube" => false,
+	"id" => "M0FMS2IG4g0",
+	"file" => "EP56.mp4",
+	"number" => 56
+];
+
+$episodes[55] = [	
+	"title" => "Spoiler Boys (Open Gallery)",
+	"youtube" => true,
+	"id" => "LaDpW06VASI",
+	"number" => 55
+];
+
+$episodes[54] = [	
+	"title" => "Aaron Dilloway",
+	"youtube" => true,
+	"id" => "w9eTEnUkpFg",
+	"number" => 54
+];
+
+$episodes[53] = [	
+	"title" => "Jeff Witscher",
+	"youtube" => true,
+	"id" => "u4saUkKrC-c",
+	"number" => 53
+];
+
+$episodes[52] = [	
+	"title" => "The Tenses",
+	"youtube" => true,
+	"id" => "MhEO9iUXFEc",
+	"number" => 52
+];
+
+$episodes[51] = [	
+	"title" => "Mary Sutton",
+	"youtube" => false,
+	"file" => "EP51.mp4",
+	"id" => "HZH6W7vuV7w",
+	"number" => 51
+];
+
+$episodes[50] = [	
+	"title" => "Maxx Bass",
+	"youtube" => false,
+	"file" => "EP50.mp4",
+	"id" => "XHWunt4dX_Q",
+	"number" => 50
+];
+
+$episodes[49] = [	
+	"title" => "Lokad",
+	"youtube" => true,
+	"id" => "VQ9J5hkMgI8",
+	"number" => 49
+];
+
+$episodes[48] = [	
+	"title" => "Strategy",
+	"youtube" => true,
+	"id" => "tznViaX5YYs",
+	"number" => 48
+];
+
+$episodes[47] = [
+	"title" => "DJ Broken Window",
+	"youtube" => true,
+	"id" => "pS4ZM08TXG4",
+	"number" => 47
+];
+
+
+$episodes[46] = [
+	"title" => "Syd Woz",
+	"youtube" => false,
+	"id" => "p2WoIj84lhE",
+	"file" => "EP46.mp4",
+	"number" => 46
+];
+
+$episodes[45] = [
+	"youtube" => true,
+	"title" => "Regularfantasy",
+	"id" => "YeJauyrC7tA",
+	"number" => 45
+];
+
+$episodes[44] = [
+	"youtube" => false,
+	"file" => "EP44.mp4",
+	"title" => "E*Rock (NYE)",
+	"id" => "BWvgqa1Jr6k",
+	"number" => 44
+];
+
+$episodes[43] = [
+	"youtube" => true,
+	"title" => "Groovin Gary (NYE)",
+	"id" => "HXQw13mslMs",
+	"number" => 43
+];
+
+$episodes[42] = [
+	"title" => "Cee White",
+	"youtube" => false,
+	"file" => "EP42.mp4",
+	"id" => "jVd6d83tjig",
+	"number" => 42
+];
+
+$episodes[41] = [
+	"title" => "Willie Burns",
+	"youtube" => true,
+	"id" => "scpl88E9DVw",
+	"number" => 41
+];
+
 $episodes[40] = [
 	"youtube" => true,
 	"title" => "Recalled Meat (Hubbaberg)",
